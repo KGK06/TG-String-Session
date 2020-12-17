@@ -13,9 +13,9 @@ from pyrogram.errors import (
 )
 
 API_TEXT = """Hi, {}.
-This is Pyrogram's String Session Generator Bot. I will generate String Session of your Telegram Account.
+This is Pyrogram's String Session Generator Bot. I will generate String Session of your Telegram Account (or) Bot 🤓. 
 
-By @Discovery_Updates
+A Bot By @MeGBots
 
 Now send your `API_ID` same as `APP_ID` to Start Generating Session."""
 HASH_TEXT = "Now send your `API_HASH`.\n\nPress /cancel to Cancel Task."
@@ -128,7 +128,7 @@ async def genStr(_, msg: Message):
         await client.disconnect()
         text = "String Session is Successfully Generated.\nClick on Below Button."
         reply_markup = InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="Show String Session", url=f"tg://openmessage?user_id={chat.id}")]]
+            [[InlineKeyboardButton(text="𝚂𝚎𝚎 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗 👀", url=f"tg://openmessage?user_id={chat.id}")]]
         )
         await bot.send_message(chat.id, text, reply_markup=reply_markup)
     except Exception as e:
@@ -159,11 +159,11 @@ Must Join Channel for Bot Updates !!
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('Support Group', url='https://t.me/linux_repo'),
-                InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')
+                InlineKeyboardButton('𝚂𝚞𝚙𝚙𝚘𝚛𝚝 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/MeGBotsChat'),
+                InlineKeyboardButton('𝙼𝚘𝚛𝚎 𝙱𝚘𝚝𝚜', url='https://t.me/MeGBotsChat/1419')
             ],
             [
-                InlineKeyboardButton('Bots Updates Channel', url='https://t.me/Discovery_Updates'),
+                InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/MeGBots'),
             ]
         ]
     )
